@@ -21,16 +21,16 @@ print (f'{year} год {month} мес {day} дн {hour} час {minute} мин {
 # секунд, то есть нет "годов" и месяцев", то "годы" и "месяцы" выводиться не должны.
 # реализация такая:
 
-if duration < 60:																			# условие вывода если duration до 1 мин
+if duration < 60:																	# условие вывода если duration до 1 мин
 	print (duration, 'сек')
-elif duration < 60*60:																		# условие вывода если duration до 1 часа
+elif duration < 60*60:																# условие вывода если duration до 1 часа
 	print (minute, "мин", second, "сек")
-elif duration < 24*60*60:																	# условие вывода если duration до 1 суток
+elif duration < 24*60*60:															# условие вывода если duration до 1 суток
 	print (hour, "час", minute, "мин", second, "сек")
-elif duration < 24 * 60 * 60 * 365/12:														# условие вывода если duration до 1 месяца
+elif duration < 24 * 60 * 60 * 365/12:												# условие вывода если duration до 1 месяца
 	print (day, "дн", hour, "час", minute, "мин", second, "сек")
-elif duration < 24 * 60 * 60 * 365:															# условие вывода если duration до 1 года
+elif duration < 24 * 60 * 60 * 365:													# условие вывода если duration до 1 года
 	print (month, "мес", day, "дн", hour, "час", minute, "мин", second, "сек")
-else:																						# условие вывода если duration >= 1 году
+else:																				# условие вывода если duration >= 1 году
 	print (year, "год", month, "мес", day, "дн", hour, "час", minute, "мин", second, "сек")
 
